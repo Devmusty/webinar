@@ -1,28 +1,14 @@
-const navslide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav_links");
-  const navLinks = document.querySelectorAll('.nav_links li');
 
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
 
-
-
-  burger.addEventListener("click", () => {
-    //Toggle Nav
-    nav.classList.toggle("nav-active");
-
-    //Animate links
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = ' ';
-      } else {
-        link.style.animation = ' NavLinkFade 0.5s ease forwards ${index / 7 + 0.5}s';
-      }
-    });
-    //burger Animation
-    burger.classList.toggle('toggle');
-    
-  });
-
-}
-
-navslide();
+ function navToggle() {
+   navToggler.classList.toggle("active");
+   const nav = document.querySelector(".nav");
+   nav.classList.toggle("open");
+   if (nav.classList.contains("open")) {
+     nav.style.maxHeight = nav.scrollHeight + "px";
+   } else {
+     nav.removeAttribute("style");
+   }
+ } 

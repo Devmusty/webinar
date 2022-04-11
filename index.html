@@ -14,32 +14,41 @@
       referrerpolicy="no-referrer"
     />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 <body>
-    <nav> 
-        <div class="logo">
-          <h4>Company</h4>
+
+  <!--nav bar-->
+
+ <header class="header1">
+    <div class="container1">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+               <a href="#">Company</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#service">services</a></li>
+                  <li><a href="#">testimonials</a></li>
+                  <li><a href="#contact">contact</a></li>
+               </ul>
+            </nav>
         </div>
-        <ul   class="nav_links">
-          <li ><a href="#" >Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    <button class="nav_btn">Login</button>  
-           <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-          </div>
-        </nav>
+    </div>
+ </header>
+
     <div class="header">
         <div class="head_text"> 
              <h1>Webinar Event <br>For Today</h1>
             <p><h2>The point of using Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quaerat?</h2></p>
             <button class="header_btn">Learn More...</button>
         </div>
-        <div class="header_img">
+        <div class="header_img" data-aos="fade-left"> 
             <img src="images/img.png">
         </div>
     </div>
@@ -47,22 +56,22 @@
     <div id="about">
       <div class="container">
         <div class="cont">
-        <div class="container_img">
+        <div class="container_img" data-aos="fade-right">
                  <img src="/images/img1.jpg">
         </div>
         <div class="content">
           <h1>OUR STORY</h1>
           <p><h2>Our team comes with the experience and knowledge</h2></p>
           <div class="cards">
-            <div class="card card1">
+            <div class="card card1" data-aos="fade-left">
               <h1>Who we are</h1>
               <p><h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.</h2></p>
             </div>
-            <div class="card card2">
+            <div class="card card2"  data-aos="fade-right">
               <h1>Our Vision</h1>
               <p><h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.</h2></p>
             </div>
-            <div class="card card2">
+            <div class="card card2" data-aos="fade-left">
               <h1>Our Story</h1>
               <p><h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.</h2></p>
             </div>
@@ -81,32 +90,32 @@
 
       <div class="service_cards">
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-left">
          <div class="i"><div class="icon"><i class='fas fa-capsules'></i></div></div>
           <div class="card_content"><h1>Refreshing Design</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div>   
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-right">
          <div class="i"><div class="icon"><i class="fab fa-bootstrap"></i></div></div>
           <div class="card_content"><h1>Solid Bootstrap 5</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div>   
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-left">
          <div class="i"><div class="icon"><i class="fa fa-wrench" ></i></div></div>
           <div class="card_content"><h1>100+ Components</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div> 
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-right">
          <div class="i"><div class="icon"><i class="fa fa-tachometer"></i></div></div>
           <div class="card_content"><h1>Speed Optimized</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div>  
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-left">
          <div class="i"><div class="icon"><i class='fas fa-layer-group'></i></div></div>
           <div class="card_content"><h1>Fully Customizable</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div>    
 
-        <div class="service_card">
+        <div class="service_card" data-aos="fade-right">
          <div class="i"><div class="icon"><i class="fa fa-refresh"></i></div></div>
           <div class="card_content"><h1>Regular Updates</h1><p><h2>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</h2></p></div>
         </div>    
@@ -120,7 +129,7 @@
       <div class="contact">
         <div class="contact_card">
           <div class="cont_card">
-            <div class="c1">
+            <div class="c1" data-aos="fade-right">
               <div class="d"><div class="icon2"><i class="fas fa-phone"></i></div></div>
               <div class="item">
                 <h1>Contact</h1>
@@ -131,7 +140,7 @@
               </div>
             </div>
 
-              <div class="c1">
+              <div class="c1" data-aos="fade-right">
               <div class="d"><div class="icon2"><i class="	fas fa-map-marker-alt"></i></div></div>
               <div class="item">
                 <h1>Address</h1>
@@ -141,7 +150,7 @@
               </div>
             </div>
 
-            <div class="c1">
+            <div class="c1" data-aos="fade-right">
               <div class="d"><div class="icon2"><i class="	fas fa-clock"></i></div></div>
               <div class="item">
                 <h1>Schedule</h1>
@@ -205,6 +214,64 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="f"> 
+         <div class="footer_1">
+
+        <div class="foot_1">
+          <h1>Company</h1>
+          <p><h2>Making the world a better place through constructing elegant hierarchies.</h2></p>
+         <div class="copy">
+           <p>© 2024 Ayro UI.</p>
+          <p>Designed and Developed by Showole Mustapha</p>
+        </div> 
+        </div>
+
+      <div class="foot_2">
+        <h1>Solutions</h1>
+        <div class="list">
+          <ul>
+            <li ><a href="#">Marketing</a></li>
+            <li ><a href="#">Analytics</a></li>
+            <li ><a href="#">commerce</a></li>
+            <li ><a href="#">Insights</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot_2">
+        <h1>Support</h1>
+        <div class="list">
+          <ul>
+            <li ><a href="#">Pricing</a></li>
+            <li ><a href="#">Documentation</a></li>
+            <li ><a href="#">Guide</a></li>
+            <li ><a href="#">API status</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <h1>Subscribe</h1>
+        <p><h2>Subscribe to our newsletter for the latest updates</h2></p>
+        <div class="news">
+          <label for="newsletter">
+            <input type="text" placeholder="Email Address">
+           <span class="send"><i class="fa fa-paper-plane" aria-hidden="true"></i></span> 
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
 <script src="index.js"></script>
 </body>
 </html>
